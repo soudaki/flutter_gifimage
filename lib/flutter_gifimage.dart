@@ -9,7 +9,6 @@ library flutter_gifimage;
 import 'package:http/http.dart' as http;
 import 'dart:ui' as ui show Codec;
 import 'dart:ui';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 
 /// cache gif fetched image
@@ -46,8 +45,8 @@ class GifController extends AnimationController {
 
   @override
   void reset() {
-    // TODO: implement reset
     value = 0.0;
+    super.reset();
   }
 }
 
